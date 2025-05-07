@@ -1,0 +1,22 @@
+aside {
+    background-color: var(--surface-secondary);
+    padding: 4rem;
+
+    .aside-container {
+        max-width: 31rem;
+        overflow: hidden;
+        gap: 2rem;
+
+        header {
+            gap: 0.5rem;
+
+            img {
+                width: max-content;
+            }
+
+            span {
+                color: var(--text-highlight);
+            }
+        }
+    }
+}
