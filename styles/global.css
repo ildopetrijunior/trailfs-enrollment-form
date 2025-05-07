@@ -56,3 +56,22 @@ h2 {
 h3 {
     font: var(--title-sm);
 }
+
+legend {
+    font: var(--title-sm);
+    color: var(--text-primary);
+}
+
+p {
+    font: var(--text-md);
+    color: var(--text-secondary);
+}
+
+label {
+    font: var(--text-sm);
+    color: var(--text-secondary);
+}
+
+img {
+    max-width: 100%;
+}
