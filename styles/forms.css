@@ -1,8 +1,22 @@
 form {
+    display: grid;
+    gap: 4rem;
+
     fieldset {
         border: none;
         display: grid;
         gap: 1.5rem;
+
+        .input-wrapper:has([disabled]) {
+            pointer-events: none;
+            opacity: 0.5;
+
+            input {
+                background: var(--surface-disabled);
+                border: 1px solid var(--stroke-default);
+                color: var(--text-primary);
+            }
+        }
 
         input, textarea, select {
             appearance: none;
@@ -10,7 +24,6 @@ form {
             border-radius: 0.5rem;
             border: 1px solid var(--stroke-default);
             padding: 0.75rem 1rem;
-
 
             &:focus-within {
                 outline: 0.25rem solid var(--surface-secondary);

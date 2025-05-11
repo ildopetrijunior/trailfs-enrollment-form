@@ -4,3 +4,12 @@
 .column {
     flex-direction: column;
 }
+.flex-1 {
+    flex: 1;
+}
+.flex-2 {
+    flex: 2;
+}
+.gap-20 {
+    gap: 1.25rem;
+}
