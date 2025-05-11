@@ -68,7 +68,7 @@
                         <legend>Endereço residencial</legend>
                         <div class="input-wrapper">
                             <label for="cep">CEP</label>
-                            <input type="text" id="cep" name="cep" placeholder=""/>
+                            <input type="text" id="cep" name="cep"/>
                         </div>
                         <div class="flex gap-20">
                             <div class="input-wrapper flex-2">
@@ -90,6 +90,26 @@
                             <div class="input-wrapper flex-1">
                                 <label for="uf">Estado</label>
                                 <input type="text" id="uf" name="uf" value="SP" disabled/>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="guardian-info">
+                        <legend>Informações do responsável</legend>
+                        <div class="input-wrapper">
+                            <label for="guardian">Nome do responsável</label>
+                            <input type="text" id="guardian" name="guardian"/>
+                            <small>Principal responsável legal e contato de emergência</small>
+                        </div>                        
+                        <div class="input-wrapper">
+                            <label for="phone">Telefone</label>
+                            <input type="text" id="phone" name="phone"/>
+                        </div>                        
+                        <div class="input-wrapper">
+                            <label for="mail">E-mail</label>
+                            <input type="text" id="mail" name="mail" required/>
+                            <div class="error">
+                                <img src="assets/icons/alert-icon.svg" alt="ícone de alerta vermelho">
+                                <span>Insira um e-mail válido</span>
                             </div>
                         </div>
                     </fieldset>
