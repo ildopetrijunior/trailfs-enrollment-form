@@ -18,6 +18,16 @@ form {
             }
         }
 
+        .error {
+            display: flex;
+            align-items: center;
+            gap:0.25rem;
+            color: var(--semantic-error);
+            font: var(--text-sm);
+            margin-top: 0.25rem;
+        }
+
+
         input, textarea, select {
             appearance: none;
             width: 100%;
@@ -29,6 +39,14 @@ form {
                 outline: 0.25rem solid var(--surface-secondary);
                 border: 0.125rem solid var(--stroke-highlight);
                 outline-offset: 0.1px;
+            }
+
+            &:invalid {
+                border: 0.125rem solid var(--semantic-error);
+            }
+
+            &:valid + .error {
+                display: none;
             }
         }
 
@@ -105,6 +123,11 @@ form {
 
         legend {
             margin-bottom: 1.5rem;
+        }
+
+        small {
+            display: inline-block;
+            margin-top: 0.25rem;
         }
     }
 }
